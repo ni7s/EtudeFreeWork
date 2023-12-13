@@ -73,8 +73,8 @@ def main():
         all_annonces.extend(scrape_page(url))
         time.sleep(delay)
 
-    save_to_json('annonces-'+f+'-'+str(pages_to_scrape)+'pages'+'.json', all_annonces)
-    save_to_csv('annonces.csv', all_annonces)
+    save_to_json('jobs/annonces-'+f+'-'+str(pages_to_scrape)+'pages'+'.json', all_annonces)
+    save_to_csv('jobs/annonces.csv', all_annonces)
 
     logging.info("Scraping terminé")
 
